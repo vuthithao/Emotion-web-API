@@ -73,8 +73,8 @@ def load_and_align_data(img, image_size,margin, gpu_memory_fraction):
     return bb,have_face
 
 
-model = model_from_json(open("/home/thaovu/simple-keras-rest-api/models/model_4layer_2_2_pool.json", "r").read())
-model.load_weights('/home/thaovu/simple-keras-rest-api/models/model_4layer_2_2_pool.h5') #load weights
+model = model_from_json(open("models/model_4layer_2_2_pool.json", "r").read())
+model.load_weights('models/model_4layer_2_2_pool.h5') #load weights
 
 
 def model_predict(img, model):
